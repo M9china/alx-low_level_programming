@@ -2,12 +2,17 @@
 #include<stdio.h>
 /**
 *
-*main - entry point
+*File : 4-puts.c
 *
-*return - always 0
 */
 int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle");
+/**
+*
+*main - prints "Programming is like building a multilingual puzzle
+*
+*return - always returns 0
+*/
+puts("\"Programming is like builing a multilingual puzzle");
 return (0);
 }
