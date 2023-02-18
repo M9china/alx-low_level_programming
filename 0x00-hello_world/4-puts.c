@@ -1,11 +1,10 @@
 
 /**
-*File: 4-puts.c
 *
 */
-#include<stdio.h>
+#include <stdio.h>
 /**
-* main - prints "Programming is like building a multilingual puzzle.
+* main - prints "Programming is like buuilding a multilingual puzzle.
 *
 * return: Always 0
 */
