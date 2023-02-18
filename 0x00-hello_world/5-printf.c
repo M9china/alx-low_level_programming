@@ -1,16 +1,13 @@
 
 /**
-* file: printf.c
+* file: 5-printf.c
 */
 #include <stdio.h>
 /**
-* main - prints with proper grammar, but the outcome is a piece of art,
-*
-* return: Always 0
+* main - prints with proper grammar, but the output is art,
+* return always 0
 */
-int main(void)
-{
-    printf("with proper grammar, but the output is a piece of art,
+printf("with proper grammar, but the output is art,
 ");
 return (0);
 }
