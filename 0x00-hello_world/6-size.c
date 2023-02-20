@@ -1,23 +1,21 @@
-
-/**
-* file: 6-size.c
-*/
 #include <stdio.h>
 /**
-* main - prints the size of each various type on the computer
-* return: Always 0
+* main Entry point
+* Description: this programm prints the size of each data type
+*              used in a computer
+* return Always 0 (success)
 */
 int main(void)
-{
-printf("Size of a char: %zu byte(s)
-", sizeof(char));
-printf("Size of an int: %zu byte(s)
-", sizeof(int));
-printf("Size of a long int: %zu byte(s)
-", sizeof(long int));
-printf("Size of a long long int: %zu byte(s)
-", sizeof(long long int));
-printf("Size of a float: %zu byte(s)
-", sizeof(float));
-return (0);
+{  
+	char c;
+	int i;
+	long int li;
+	long long int lli;
+	float f;
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(i));
+	printf("Size of long int: %lu byte(s)\n", (unsigned long)sizeof(li));
+	printf("Size of long long int: %lu byte(s)\n", (unsigned long)sizeof(lli));
+	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+	return (0);
 }
