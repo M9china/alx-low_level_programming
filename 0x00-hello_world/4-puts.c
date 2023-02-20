@@ -1,7 +1,4 @@
 
-/**
-* file: 4-puts.c
-*/
 #include <stdio.h>
 /**
 * main - prints "Programming is like buuilding a multilingual puzzle.
