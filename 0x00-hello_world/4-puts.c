@@ -1,15 +1,11 @@
 
-/**
-* file: 4-puts.c
-*/
 #include <stdio.h>
 /**
-* main - prints "Programming is like buuilding a multilingual puzzle.
-*
-* return: Always 0
+* main - Entry point
+* return Always 0 (success)
 */
 int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle");
-return (0);
+    puts("\"Programmingis like building a multilingual puzzle");
+    return (0);
 }
