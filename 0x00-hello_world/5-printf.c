@@ -1,13 +1,10 @@
-
-/**
-* file: 5-printf.c
-*/
 #include <stdio.h>
 /**
 * main - prints with proper grammar, but the output is art,
-* return always 0
+* return always 0 (success)
 */
-printf("with proper grammar, but the output is art,
-");
-return (0);
+int main(void)
+{ 
+    printf("with proper grammar, but the output is art,\n");
+    return (0);
 }
