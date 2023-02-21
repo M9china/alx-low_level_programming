@@ -7,17 +7,23 @@
 int main(void)
 {
 	int numerals;
+
 	for(numerals = '0'; numerals <= '9'; numerals++)
 	{
 		putchar(numerals);
+
 		if(numerals == '9')
 		{
 			continue;
 		}
+
 		putchar(',');
+
 		putchar(' ');
 	}
+
 	putchar('\n');
+
 	return (0);
 }
  
