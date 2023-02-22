@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _islower checks for lower case alphabet
+ * _islower - Entry point
  * @c: is the argument
  * Return: 1 if true and 0 if false
  */
