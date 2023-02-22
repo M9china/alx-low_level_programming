@@ -1,16 +1,21 @@
 #include <unistd.h>
-#include "_putchar"
+#include "main.h"
 /**
- * _puthcar - writes the character c to the stdout
- * @c: The character to print
- *
- * Return: 1 0n success.
- * On error, returns -1, and errorno is set appropriately.
+ * main - Entry point.
+ * Description: The program prints _putchar,followed by a new line.
+ * Return: Always 0 (success).
  */
-int _putchar(char c);
+int main(void)
 {
-	putchar("_putchar\n");
+	char c[8] = "_putchar";
+	int n;
+	for(n = 0; n <= 8; n++)
+	{
+		putchar(c[n]);
+	}
+	putchar("\n");
 
-	return (write(1,&c,1));
+	return (0);
 }
+
 
