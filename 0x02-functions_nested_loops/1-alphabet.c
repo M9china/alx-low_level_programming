@@ -7,7 +7,9 @@
  */
 int main(void)
 {
-	for(int n = 'a'; n <= 'z'; n++)
+	int n;
+
+	for(n = 'a'; n <= 'z'; n++)
 	{
 		_putchar(n);
 
