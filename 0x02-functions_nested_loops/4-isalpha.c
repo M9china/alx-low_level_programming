@@ -4,7 +4,7 @@
  * &c: is the argument
  * Return: 1 if true and 0 if false
  */
-int _isalpha(int c);
+int _isalpha(int c)
 {
 	if ((c >= 'a'; && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
