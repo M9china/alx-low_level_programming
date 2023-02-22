@@ -1,4 +1,3 @@
-#include<unistd.h>
 #include "main.h"
 /**
  * main - Entry point
@@ -14,7 +13,7 @@ int main(void)
 		_putchar(n);
 
 	}
-	_puthcar("\n");
+	_puthcar('\n');
 
 	return (0);
 }
