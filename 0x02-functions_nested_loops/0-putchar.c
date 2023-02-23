@@ -6,17 +6,15 @@
  */
 int main(void)
 {
-	char c[8] = "_putchar";
+	char c[] = "_putchar\n";
 
-	int n;
+	int i = 0;
 
-	for (n = 0; n <= 8; n++)
+	while (c[i] != '\0')
 	{
-		_putchar(c[n]);
+		_putchar(c[i]);
+		i++;
 	}
-	_putchar('\n');
-
 	return (0);
 }
-
 
