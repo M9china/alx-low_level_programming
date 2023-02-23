@@ -15,7 +15,7 @@ int main(void)
 
 	ldi = n % 10;
 
-	printf("Lats digit of %d is ", n);
+	printf("Last digit of %d is ", n);
 
 	if (ldi > 5)
 	{
