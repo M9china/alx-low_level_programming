@@ -1,35 +1,31 @@
 #include <stdio.h>
-#include <ctype.h>
+
 /**
-*main - Entry point
-*Return: Always 0 (success)
-*/
+ * main - Entry point
+ * Description: Prints possible combinations of two two digits
+ * Return: 0
+ */
+
 int main(void)
 {
-	int num1,num2;
-	for (num1 = 0; num1 ,= 98; num1++)
+	int i, j;
+
+	for (i = 0; i <= 99; i++)
 	{
-		for (num2 = num1 + 1; num2 <= 99; num2++)
+		for (j = i + 1; j <= 99; j++)
 		{
-			putchar((num1 / 10) + '0');
-
-			putchar((num1 % 10) + '0');
-
-			putchar(32);
-
-			putchar((num2 / 10) + '0');
-
-			putchar((num2 % 10) + '0');
-
-			if (num1 / 10 != 9 || num1 % 10 != 8)
+			putchar((i / 10) + '0'); /* print first digit of i */
+			putchar((i % 10) + '0'); /* print second digit of i */
+			putchar(' ');
+			putchar((j / 10) + '0'); /* print first digit of j */
+			putchar((j % 10) + '0'); /*  print second digit of j */
+			if (i != 98 || j != 99) /* check if it's the last combination */
 			{
-				putchar(44);
-
-				putchar(32);
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
-	putchar(10);
-
+	putchar('\n');
 	return (0);
 }

@@ -1,27 +1,27 @@
 #include <stdio.h>
+
 /**
- *main - Entry point
- *Return: Always 0 (success)
+ * main - Entry point
+ * Description - Output  Combinations of two digit
+ * Return: 0
  */
+
 int main(void)
 {
-	int num1,num2;
-	for(num1 = 0;num1<9;num1++)
+	int i, k;
+
+	for (i = 0; i <= 8; i++)
 	{
-		for(num2 = num1=1;num2<10;num2++)
+		for (k = i + 1; k < 10; k++)
 		{
-			putchar((num1 % 10) + '0');
-			putchar((num2 % 10) + '0');
-
-			if(num1 == 8 && num2 == 9)
+			putchar('0' + i);
+			putchar('0' + k);
+			if (i < 8)
 			{
-				continue;
-
-			putchar(',');
-			putchar(' ');
+				putchar(',');
+				putchar(' ');
 			}
 		}
-		break;
 	}
 	putchar('\n');
 	return (0);

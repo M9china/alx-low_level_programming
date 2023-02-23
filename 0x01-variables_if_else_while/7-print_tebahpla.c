@@ -1,19 +1,21 @@
 #include <stdio.h>
-#include <ctype.h>
+
 /**
-*main - Entry point
-*Return: Always 0 (success)
-*/
+ * main - Entry point
+ * Description - lowercase alphabet in reverse
+ * Return: 0(success)
+ */
+
 int main(void)
 {
-	int rev_alphabet;
-	
-	for (rev_alphabet = 'z'; rev_alphabet >= 'a'; rev_alphabet--)
+	int i;
+
+	for (i = 'z'; i >= 'a' ; i--)
 	{
-		putchar(rev_alphabet);
+	putchar(i);
 	}
-	
+
 	putchar('\n');
-	
-	return (0);
+
+return (0);
 }

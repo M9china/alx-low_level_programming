@@ -1,19 +1,20 @@
 #include <stdio.h>
-#include <ctype.h>
+
 /**
-*main - Entry point
-*Return: Always 0 (success)
-*/
+ * main - Entry point
+ * Description - Counting numbers in base10
+ * Return: 0
+ */
+
 int main(void)
 {
 	int i;
-	
+
 	for (i = 0; i < 10; i++)
 	{
 		printf("%d", i);
 	}
-	
 	putchar('\n');
-	
+
 	return (0);
 }

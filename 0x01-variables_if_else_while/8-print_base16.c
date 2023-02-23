@@ -1,29 +1,20 @@
 #include <stdio.h>
-#include <ctype.h>
+
 /**
-*main - Entry point
-*Return: Always 0 (success)
-*/
+ * main - Entry point
+ * Description - Program to output hexadecimal
+ * Return: 0
+ */
+
 int main(void)
 {
-	int numerals;
-	
-	for (numerals = '0';numerals <= '9'; numerals++)
+	int i;
+
+	for (i = 0; i < 16; i++)
 	{
-		putchar(numerals);
-		
-		if (numerals == '9')
-		{
-			numerals = 'a';
-			for (; numerals <= 'f';numerals++)
-			{
-				putchar(numerals);
-			}
-			break;
-		}
+		putchar(i < 10 ? i + '0' : i + 'a' - 10);
 	}
-	
 	putchar('\n');
-	
+
 	return (0);
 }

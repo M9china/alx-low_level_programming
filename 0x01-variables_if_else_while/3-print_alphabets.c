@@ -1,28 +1,24 @@
 #include <stdio.h>
-#include <ctype.h>
+
 /**
-*main - Entry point
-*Retrun: Always 0 (succes)
-*/
+ * main - Entry point
+ * Description: Alphabet Game - lowecase and UPPERCASE
+ * Return: 0
+ */
+
 int main(void)
 {
-	int letter;
-	
-	for (letter = 'a';letter <= 'z';letter++)
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		letter = tolower(letter);
-		putchar(letter);
-		if (letter == 'z')
-		{
-			letter = 'A';
-			for (; letter <= 'Z';letter++)
-			{
-				putchar(letter);
-			}
-			break;
-		}
+		putchar(c);
+	}
+	for (c = 'A'; c <= 'Z'; c++)
+	{
+		putchar(c);
 	}
 	putchar('\n');
-	
+
 	return (0);
 }

@@ -1,18 +1,20 @@
 #include <stdio.h>
+
 /**
-* main - Entry point
-* Description: Prints lower case alphabet
-* Retrun: 0
-*/
+ * main -Entry point
+ * Description: A program that print the lowercase alphabet
+ * Return: 0
+ */
+
 int main(void)
 {
-	int alpha;
+	char c = 'a';
 
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	while (c <= 'z')
 	{
-		putchar(alpha);
+		putchar(c);
+		c++;
 	}
 	putchar('\n');
 	return (0);
 }
-

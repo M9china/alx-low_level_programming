@@ -1,38 +1,33 @@
 #include <stdio.h>
-#include <ctype>
+
 /**
-*main - Entry point
-*Return: Always 0 (success)
-*/
+ * main - Entry point
+ * Description - Combination of Three digits
+ * Return: 0 (succes)
+ */
+
 int main(void)
 {
-	int num1, num2, num3;
-	for (num1 = 0; num1 < 9; num1++)
+	int i, j, k;
+
+	for (i = 0; i <= 7; i++)
 	{
-		for (num2 = num1 + 1; num2 < 9; num2++)
+		for (j = i + 1; j <= 8; j++)
 		{
-			for (num3 = num2 + 1; num3 < 10; num3++)
+			for (k = j + 1; k <= 9; k++)
 			{
-				putchar((num1 % 10) + '0');
-				
-				putchar((num2 % 10) + '0');
-
-				putchar((num3 % 10) + '0');
-
-				if (num1 == 7 && num2 == 8 && num3 ==9)
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(k + '0');
+				if (i != 7 || j != 8 || k != 9)
 				{
-					continue;
-
+					putchar(',');
+					putchar(' ');
 				}
-				putchar(',');
-
-				putchar(' ');
 			}
 		}
 	}
-
-	puchar('\n');
+	putchar('\n');
 
 	return (0);
-}
 

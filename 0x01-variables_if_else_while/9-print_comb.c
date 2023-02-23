@@ -1,29 +1,24 @@
 #include <stdio.h>
-#include <ctype.h>
+
 /**
-*main - Entry point
-*Return: Always 0 (success)
-*/
+ * main - Entry point
+ * Description - Combinations of single-digit numbers.
+ * Return: 0
+ */
+
 int main(void)
 {
-	int numerals;
+	int i;
 
-	for (numerals = '0'; numerals <= '9'; numerals++)
+	for (i = 48; i < 58; i++)
 	{
-		putchar(numerals);
-
-		if (numerals == '9')
+		putchar(i);
+		if (i != 57)
 		{
-			continue;
+			putchar(',');
+			putchar(' ');
 		}
-
-		putchar(',');
-
-		putchar(' ');
 	}
-
 	putchar('\n');
-
 	return (0);
 }
- 
