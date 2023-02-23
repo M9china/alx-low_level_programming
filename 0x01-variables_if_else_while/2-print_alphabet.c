@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-*main - Entry point
-*Description: Prints lower case alphabet
-*Retrun: 0
+* main - Entry point
+* Description: Prints lower case alphabet
+* Retrun: 0
 */
 int main(void)
 {
