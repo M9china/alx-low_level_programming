@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isalpha - Entry point
+ * _isalpha - check for alphabetic characters
  * &c: is the argument
  * Return: 1 if true and 0 if false
  */

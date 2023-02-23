@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_sign - Entry point
+ * print_sign - prints sign of a number
  * &n: is an argument
  *
  * Return: 1 if pos, 0 if 0 and -1 if neg

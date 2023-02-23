@@ -1,6 +1,6 @@
 #incldue "main.h"
 /**
- * add - Entry point
+ * add - adds two numbers
  * &a: first variable
  * &b: second variable
  * Return: sum of the variables
