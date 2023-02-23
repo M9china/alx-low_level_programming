@@ -1,23 +1,24 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
  * main - Entry point
- * Description - Alphabeth Soup
- * Return: 0
+ * Description: prints lowercase alphabets
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	char c;
+	int ch;
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (c != 'e' && c != 'q')
+		if (ch != 'e' && ch != 'q')
 		{
-			putchar(c);
+			putchar(ch);
+		}
+		else
+		{
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
