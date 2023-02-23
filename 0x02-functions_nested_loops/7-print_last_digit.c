@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * print_last_digit - Prints the value of last digit
- * &n: is the argument
- * Return: value of last digit
+ * @n: is and intiger
+ * Return: intiger
  */
 int print_last_digit(int n)
 {
