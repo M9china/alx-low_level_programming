@@ -2,7 +2,7 @@
 /**
 *main - Entry point
 *Description: Prints lower case alphabet
-*Retrun: Always 0 (success)
+*Retrun: 0
 */
 int main(void)
 {
