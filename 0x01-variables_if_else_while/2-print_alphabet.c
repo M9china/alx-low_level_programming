@@ -5,14 +5,13 @@
 */
 int main(void)
 {
-	int x;
-	
-	for(x = 'a';x <= 'z';x++)
+	int alpha;
+
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		putchar(x);
+		putchar(alpha);
 	}
-	
-	putchar('\n');
-	
+	puthcar('\n');
 	return (0);
 }
+
