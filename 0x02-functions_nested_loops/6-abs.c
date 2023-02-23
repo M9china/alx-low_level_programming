@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * _abs - computes the absolute value of int
- * &i: is a variable
+ * _abs - computes the absolute value of intiger
+ * @i: is an intiger
  * Return: int
  */
 int _abs(int i)
