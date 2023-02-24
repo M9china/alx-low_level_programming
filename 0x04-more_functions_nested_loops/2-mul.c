@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * mul - multiplies two intigers
+ * mul - Entry point
+ * Description: multiply two intigers
  * &a: is the first intiger
  * &b: is the second intiger
  * Return: intiger
