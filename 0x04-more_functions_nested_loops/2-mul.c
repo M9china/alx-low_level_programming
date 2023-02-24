@@ -5,7 +5,7 @@
  * Description: multiply two intigers
  * &a: is the first intiger
  * &b: is the second intiger
- * Return: intiger
+ * Return: int
  */
 
 int mul(int a, int b)
