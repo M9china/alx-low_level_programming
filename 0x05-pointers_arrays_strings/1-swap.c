@@ -13,4 +13,5 @@ void swap(int *a, int *b)
 
 	i = &a;
 	&a = &b;
+	&b = i;
 }
