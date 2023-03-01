@@ -9,14 +9,20 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char s1[5] = "Think";
+    int i = 0, j = 0;
 
-	char s2[4] = "Code";
-	
-	char *ptr;
+    while (dest[i] != '\0')
+    {
+        i++;
+    }
+    while (src[j] != '\0')
+    {
+        dest[i] = src[j];
+        i++;
+        j++;
+    }
+    dest[i] = '\0';
+    _putchar('\n');
 
-	ptr = _strcat(s1,s2);
-
-	_putchar(s1, s2);
+    return (dest);
 }
-
