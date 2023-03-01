@@ -4,7 +4,7 @@
  *
  * @dest: resulting string
  * @src: source string to concanate
- * @n: intiger variable
+ * @n: number of bytes to append to dest
  *
  * Return: pointer to dest
  */
@@ -24,5 +24,4 @@ char *_strncat(char *dest, char *src, int n)
 	dest[y + x] = '\0';
 
 	return (dest);
-
 }
