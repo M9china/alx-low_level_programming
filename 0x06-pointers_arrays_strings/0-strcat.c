@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strcat - concanates trwo strings
- * @dest: is the fist string
- * @src: is the second string
+ * *_strcat - concanates trwo strings
+ * @dest: string tp concanate on
+ * @src: string to append to @dest
  * Return: pointer to dest
  */
 
