@@ -9,24 +9,15 @@
 
 char *rot13(char *str)
 {
-	char alphabet[52] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
-	char key[52] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
+    int i = 0;
 
-	int i;
-
-	int j = 0;
-
-	for (i = 0; str[i] != '\0'; i++)
-	{
-
-		for (j = 0; alphabet[j] != '\0'; j++)
-		{
-			if (s[i] == alphabet[j])
-			{
-				str[i] = key[j];
-				break;
-			}
-		}
-	}
-	return (str);
+    while (str[i] != '\0')
+    {
+        if ((str[i] >= 'a' && str[i] <= 'm') || (str[i] >= 'A' && str[i] <= 'M'))
+            str[i] += 13;
+        else if ((str[i] >= 'n' && str[i] <= 'z') || (str[i] >= 'N' && str[i] <= 'Z'))
+            str[i] -= 13;
+        i++;
+    }
+    return (str);
 }
