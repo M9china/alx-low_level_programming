@@ -8,20 +8,19 @@
  *
  * Return: pointer to dest
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
-	int x;
-	
-	int y;
+	int i;
+	int j;
 
-	for (y = 0; dest[y] != '\0'; y++)
+	for (j = 0; dest[j] != '\0'; j++)
+	{}
+
+	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
+		dest[j + i] = src[i];
 	}
-	for (x = 0; x < n && src[x] != '\0'; x++)
-	{
-		dest[y + x] = src[y];
-	}
-	dest[y + x] = '\0';
+	dest[j + i] = '\0';
 
 	return (dest);
-}
