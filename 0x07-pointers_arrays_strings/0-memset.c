@@ -1,25 +1,20 @@
 #include "main.h"
 
 /**
- * *_memset - assign a value to array index
- *
- * @s: value to be changed at specified index
- * @b: new value to be used
- * @n: number of indexes to modify
- *
- * Return: pointer to memory area (array) s
+ * *_memset - fills memory with a constant byte.
+ * @s: pointer to put the constant
+ * @b: constant
+ * @n: max bytes to use
+ * Return: s
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i = 0;
+	unsigned int i;
 
-	while (i < n)
+	for (i = 0; n > 0; i++, n--)
 	{
-		if (s[i] != b)
-			s[i] = b;
-
-		i++;
+		s[i] = b;
 	}
 
 	return (s);
