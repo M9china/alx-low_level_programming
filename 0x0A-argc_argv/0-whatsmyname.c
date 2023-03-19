@@ -2,7 +2,7 @@
 /**
  * main - prints its name followed by a new line
  * @argc - counts of arguments
- * @argv - array of pointers to arguments
+ * @argv - array of  arguments
  * Return: 0
  * */
 
