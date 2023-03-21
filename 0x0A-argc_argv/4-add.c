@@ -5,13 +5,16 @@
  * main - adds positive numbers, print sum followed by new line
  * @argc: argument count
  * @argv: arguments
- *
  * Return: 0
  */
 
 int main(int argc, char **argv)
 {
-	int i, n, sum = 0;
+	int i;
+
+	int n;
+
+	int sum = 0;
 
 	char *flag;
 
