@@ -5,33 +5,35 @@
  * main - adds positive numbers
  * @argc: argument count
  * @argv: arguments
+ *
  * Return: 0
  */
-
 int main(int argc, char **argv)
 {
-	int a, b, sum = 0;
+	int i, n, sum = 0;
 
 	char *flag;
 
 	if (argc < 2)
 	{
 		printf("0\n");
+
 		return (0);
 	}
 
-	for (a =1; argv[i]; i++)
+	for (i = 1; argv[i]; i++)
 	{
-		b = strtol(argv[i], &flag, 10);
-		
+		n = strtol(argv[i], &flag, 10);
+
 		if (*flag)
 		{
 			printf("Error\n");
+
 			return (1);
 		}
-
-		else {
-			sum += b;
+		else
+		{
+			sum += n;
 		}
 	}
 	printf("%d\n", sum);
