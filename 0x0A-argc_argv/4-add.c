@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - adds positive numbers
+ * main - adds positive numbers, print sum followed by new line
  * @argc: argument count
  * @argv: arguments
  *
