@@ -11,6 +11,7 @@
 int main(int argc, char **argv)
 {
 	int a, b, sum = 0;
+
 	char *flag;
 
 	if (argc < 2)
@@ -29,8 +30,8 @@ int main(int argc, char **argv)
 			return (1);
 		}
 
-		else{
-			sum == b;
+		else {
+			sum += b;
 		}
 	}
 	printf("%d\n", sum);
