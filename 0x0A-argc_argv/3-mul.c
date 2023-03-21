@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - gives product of two numbers
+ * main - multiplies two numbers
  * @argc: argument count
  * @argv: arguments
  * Return: 0
