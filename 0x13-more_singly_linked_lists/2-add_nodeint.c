@@ -20,13 +20,10 @@ listint_t *add_nodeint(listint_t **head, const int n)
 		return (NULL);
 	}
 
-	/* New node */
 	new->n = n;
 
-	/* Set next pointer of new node to current head */
 	new->next = *head;
 
-	/* Set head to point to the new node */
 	*head = new;
 
 	return (new);
