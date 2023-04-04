@@ -13,7 +13,6 @@
 const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
 {
 	const listint_t **newlist;
-
 	size_t i;
 
 	newlist = malloc(size * sizeof(listint_t *));
@@ -38,7 +37,6 @@ const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t i, num = 0;
-
 	const listint_t **list = NULL;
 
 	while (head != NULL)
