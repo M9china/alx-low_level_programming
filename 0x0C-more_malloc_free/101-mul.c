@@ -22,10 +22,12 @@ int i, j;
 			if (argv[i][j] > 57 || argv[i][j] < 48)
 			{  printf("Error\n");
 			exit(98); }
+
+			else {
+				mul = atol(argv[1]) *  atol(argv[2]);
 		}
 
 	}
-	mul = atol(argv[1]) *  atol(argv[2]);
 	printf("%lu\n", mul);
 return (0);
 }
