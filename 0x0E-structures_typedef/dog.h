@@ -9,7 +9,6 @@
  *
  * Description: The dog objects 
  */
-
 struct dog
 {
 	char *name;
