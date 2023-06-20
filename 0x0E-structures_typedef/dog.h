@@ -3,11 +3,11 @@
 
 /**
  * struct dog - Dog objects
- * @name: The name of the dog
- * @age: The age of the dog
- * @owner: The caretaker of the dog
+ * @name: The name of the dog.
+ * @age: The age of the dog.
+ * @owner: The caretaker of the dog.
  *
- * Description: The dog objects 
+ * Description: The dog objects. 
  */
 struct dog
 {
