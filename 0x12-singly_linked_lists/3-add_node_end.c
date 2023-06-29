@@ -11,11 +11,6 @@
  *          or NULL if it failed.
  */
 
-typedef struct list_s {
-    char *str;
-    struct list_s *next;
-} list_t;
-
 list_t *add_node_end(list_t **head, const char *str) {
     if (head == NULL || str == NULL) {
         return NULL;
