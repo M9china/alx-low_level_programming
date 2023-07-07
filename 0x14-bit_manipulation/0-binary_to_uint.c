@@ -1,20 +1,26 @@
 #include "main.h"
 #include <stdio.h>
 
-unsigned int binary_to_uint(const char *b) {
-    unsigned int result = 0;
+unsigned int binary_to_uint(const char *b)
+{
+	int a;
+	unsigned int result = 0;
 
-    if (b == NULL)
-        return 0;
+	if (!b)
+		return (0);
 
-    for (int i = 0; b[i] != '\0'; i++) {
-        if (b[i] != '0' && b[i] != '1')
-            return 0;
+	for (a = 0; b[a] != '\0'; a++)
+	{
+		if (b[a] != '0' && b[a] != '1')
+			return (0);
+	}
 
-        result = (result << 1) + (b[i] - '0');
-    }
+	for (a = 0; b[a] != '\0'; a++)
+	{
+		result <<= 1;
+		if (b[a] == '1')
+			result += 1;
+	}
 
-    return result;
+	return (result);
 }
-
-
