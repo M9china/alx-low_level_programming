@@ -17,11 +17,4 @@ unsigned int binary_to_uint(const char *b) {
     return result;
 }
 
-int main() {
-    const char *binary = "101010";
-    unsigned int decimal = binary_to_uint(binary);
-    printf("Decimal: %u\n", decimal);
-
-    return 0;
-}
 
