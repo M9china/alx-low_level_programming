@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * clear_bit - sets a value of it to 0
+ * @n: pointer to index
+ * @index: position of a bit
+ *
+ * Return: 1 on SUCCESS, or 0 if fails
+ */
+
 int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int j;
