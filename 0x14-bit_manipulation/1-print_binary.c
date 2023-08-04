@@ -8,12 +8,11 @@
 
 void print_binary(unsigned long int n)
 {
-        if (n > 1)
-
-                print_binary(n >> 1);
+    if (n > 1)
+	print_binary(n >> 1);
         /*recursively calling print_binary with n right shifted  by 1 bit*/
 
-        putchar((n & 1) + '0');
+    putchar((n & 1) + '0');
         /*printing the least significant bit using AND(n & 1)*/
 }
 #include "main.h"
@@ -26,11 +25,12 @@ void print_binary(unsigned long int n)
 
 int get_endianness(void)
 {
-int num = 1;
-char *endian = (char *)&num;
+    int num = 1;
 
-if (*endian == 1)
-return (1);
+    char *endian = (char *)&num;
 
-return (0);
+    if (*endian == 1)
+        return (1);
+
+    return (0);
 }
