@@ -4,7 +4,7 @@
  * binary_to_uint - Converts a binary number represented.
  * @b: Pointer to a string of '0' and '1' .
  *
- * Return: The converted number as an unsigned integer,
+ * Return: unsigned integer,
  * or 0 if the input is invalid.
  */
 
