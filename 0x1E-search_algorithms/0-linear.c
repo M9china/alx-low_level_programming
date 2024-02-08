@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
-* linear_search - Search for a value in an array .
-* @array: Pointer to first element of the array to search.
+* linear_search - Search for a value in an array using linear search algorithm.
+* @array: Pointer to the first element of the array to search.
 * @size: Number of elements in the array.
 * @value: The value to search for.
 * Return: The first index where @value is located, or -1 if not found.
